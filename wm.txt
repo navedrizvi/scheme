@@ -1,0 +1,9 @@
+cabal update
+mkdir myScheme
+cd myScheme
+cabal init
+
+-- after adding new build deps
+cabal run
+
+ghc -package parsec -o parser app/Main.hs
